@@ -1,0 +1,5 @@
+def tabla_1():
+  n=input("Elige una tabla: ")
+  print("Has elegido la tabla del " +n)
+
+tabla_1()
