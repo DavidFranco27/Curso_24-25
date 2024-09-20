@@ -1,0 +1,8 @@
+def Saludos():
+  e= " "
+  n=input("¿Cuál es tu nombre? ")
+  print("Hola," +e +n)
+  m=input("¿Cómo estas? ")
+  print("Entonces te encuentras " +m +e +n)
+
+Saludos()
