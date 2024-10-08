@@ -1,16 +1,12 @@
-def factoresprimos():
-    n=input("Deme un mumero: ")
-    #Pruebo a dividirlo por los numeros que estan por debajo de el
-    cont=n-1 #Donde debe de empezar
-    while(cont>1):
-    #Si el numero es divisor, se saca el cociente
-        if(n%cont==0):
-            print("Es divisible:)")
-            cociente=n/cont
-            print("" +str(cociente) +"")
-            n=n/cont
-            print("Nuevo numero: " +str(n))
+def factores_primos():
+    #Leo un número
+    numero=int(input("Deme un número: "))
+    cont=2
+    while(cont<=numero):
+        if (numero%cont==0):
+            print("Es divisible por " +str(cont))
+            numero=numero/cont
         else:
-            cont=cont-1 #cont--
+            cont=cont+1
 
-factoresprimos()
+factores_primos()
