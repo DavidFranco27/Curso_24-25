@@ -1,0 +1,10 @@
+#Leo cinco numeros y me dice cual es mayor
+def menor():
+    menor=int(input("Dime un numero mayor que cero: ")) #donde comienza la variable
+    for cont in range(1,6):
+        n=int(input("Dime un numero entero mmenor que cero: "))
+        if (n<menor):
+            menor=n
+    print("El menor es " +str(menor))
+
+menor()
