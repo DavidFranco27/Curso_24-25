@@ -1,0 +1,11 @@
+#Leo cinco numeros y me dice la media de los cinco
+def media_numeros():
+    edad=0
+    for cont in range(1,6):
+        n=int(input("Dime un numero entero para hacer su media: "))
+        edad= edad+n #suma=+suma
+    print("La suma vale " +str(edad))
+    edad=edad/cont #sino da decimales x.0 (no estas en la version 3.2.5) o float() le da decimales
+    print("La media vale " +str(edad))
+
+media_numeros()
