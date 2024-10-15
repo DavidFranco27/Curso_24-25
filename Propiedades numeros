@@ -2,10 +2,10 @@
 #y resta mayor y menor
 def propiedades_numeros():
     p=0
-    mayor=0
-    menor=100000000000
+    mayor=int(input("Dime el numero mas bajo que vas a usar "))
+    menor=int(input("Dime el numero mas alto que vas a usar "))
     for cont in range(1,6):
-        n=int(input("Dime un numero entero para hacer varias cosas que no sea menor que 0 ni mayor que 100000000000: "))
+        n=int(input("Dime un numero entero para hacer varias cosas: "))
         if(n>mayor):
             mayor=n
         if(n<menor):
