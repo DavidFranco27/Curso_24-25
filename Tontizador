@@ -1,0 +1,10 @@
+rdamos una palabra y la deleatreamos
+def tontizador():
+    palabra=input("Dime una palabra con muchas vocales(Mayusculas): ")
+    for cont in range(0,8):
+        if(palabra[cont]=="A" or palabra[cont]=="E" or palabra[cont]=="I" or palabra[cont]=="U" or palabra[cont]=="O"):
+            print("U")
+        else:
+            print(palabra[cont])
+    
+tontizador()
