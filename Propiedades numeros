@@ -11,7 +11,7 @@ def propiedades_numeros():
         if(n<menor):
             menor=n
         p=p+n
-    media=p/5
+    media=float(p)/cont
     diferencia=mayor-menor
     print("El mayor es " +str(mayor))
     print("El menor es " +str(menor))
