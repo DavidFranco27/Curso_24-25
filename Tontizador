@@ -1,11 +1,12 @@
 #Guardamos una palabra y la deleatreamos
-def tontizador():
+def atontizador():
     palabra=input("Dime una palabra con muchas vocales(Mayusculas): ")
-    longitud=len(palabra)
-    for cont in range(0,longitud):
-        if(palabra[cont]=="A" or palabra[cont]=="E" or palabra[cont]=="I" or palabra[cont]=="U" or palabra[cont]=="O"):
+    #longitud=len(palabra) #numero de letras de la palabra, una posibilidad
+    for letra in palabra:
+        if(letra=="A" or letra=="E" or letra=="I" or letra=="U" or letra=="O"):
             print("U")
         else:
-            print(palabra[cont])
+            print(letra)
+    print(palabra)
     
-tontizador()
+atontizador()
