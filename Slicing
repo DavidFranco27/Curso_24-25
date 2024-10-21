@@ -1,0 +1,12 @@
+#Preguntamos nombres, apellidos y nacimiento; y nos de:
+#3 primeras del nombre y apellidos
+#2 ultimas nacimiento
+def Slicing():
+    n=input("Dime tu nombre: ")
+    m=input("Dime tu 1º apellido: ")
+    l=input("Dime tu 2º apellido: ")
+    e=input("Dime tu fecha de nacimiento(dd/mm/aaaa): ")
+    usuario=m[0:3]+l[0:3]+n[0:3]+e[8:10]
+    print("Usuario: " +usuario)
+
+Slicing()
