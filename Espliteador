@@ -1,0 +1,7 @@
+#Leo una frase y la corto en partes
+def espliteador():
+    frase=input("Digame algo inteligente: ")
+    nueva_frase=frase.split()
+    print(nueva_frase)
+
+espliteador()
