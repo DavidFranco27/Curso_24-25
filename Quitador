@@ -1,0 +1,11 @@
+#2 valores y debes hacer que en uno de los caracteres se quiten del otro
+
+def quitador():
+    frase=input("Dime una frase(escribe el texto todo en mayusculas o minusculas): ")
+    n=input ("Dime algo para que le quite (igual que el texto): ")
+    for letra in frase:
+        if(letra==n):
+            print("")
+        else:
+            print(letra)
+quitador()
