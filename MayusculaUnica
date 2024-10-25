@@ -1,0 +1,12 @@
+#Diga una frase y vocal y muestre esa vocal en mayuscula
+def MayusculaUnica():
+    frase=input("Dime una frase: ")
+    vocal=input("Dime una vocal a volver mayuscula: ")
+    for letra in range:
+        if (letra==vocal):
+            nuevaletra=vocal.upper()
+            print(nuevaletra)
+        else:
+            print(letra)
+
+MayusculaUnica()
