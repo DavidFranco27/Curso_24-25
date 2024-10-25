@@ -1,0 +1,6 @@
+#Que nos de solo el numero de telefono y que le quite el prefijo y la extension
+def telefono():
+    numero=input("Dime tu numero para que te diga La extencion y su prefijo(por ejemplo +34-913724710-56): ")
+    n=numero[5:14]
+    print("El número de tu telefono es " +n)
+telefono()
