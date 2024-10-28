@@ -1,0 +1,9 @@
+#Da un número aleatorio
+def random():
+    import random
+    import time
+    semilla=time.time()
+    random.seed(semilla)
+    print(random.random())
+
+random()
