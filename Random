@@ -2,8 +2,10 @@
 def random():
     import random
     import time
-    semilla=time.time()
-    random.seed(semilla)
+    semilla=time.time() #carga el tiempo transcurrido desde una referencia(epoch)dada
+    random.seed(semilla)#inicializa el generador de numeros aleatorios. De este modo
+    #cada vez que ejecutemos el programa consulta la lista de números aleatorios
+    #desde una posición distinta
     print(random.random())
 
 random()
