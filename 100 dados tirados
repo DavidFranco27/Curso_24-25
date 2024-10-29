@@ -3,6 +3,12 @@ import random #libreria de datos relacionado con los numeros aleatorios
 import time #libreria de datos relacionado con el tiempo del ordenador en milisegundos
 
 def dado():
+    n=0
+    m=0
+    p=0
+    o=0
+    u=0
+    i=0
     semilla=time.time()
     print("Semilla vale " +str(semilla))
     random.seed(semilla)
@@ -10,5 +16,23 @@ def dado():
     for cont in range(1,101):
         tirada=int(1+(random.random()*10)%6)
         print("Ha salido " +str(tirada))
-
+        if(tirada==1):
+            n=n+1
+        if(tirada==2):
+            m=m+1
+        if(tirada==3):
+            p=p+1
+        if(tirada==4):
+            o=o+1
+        if(tirada==5):
+            u=u+1
+        if(tirada==6):
+            i=i+1
+    print("1 ha salido " +str(n))
+    print("2 ha salido " +str(m))
+    print("3 ha salido " +str(p))
+    print("4 ha salido " +str(o))
+    print("5 ha salido " +str(u))
+    print("6 ha salido " +str(i))
+    
 dado()
