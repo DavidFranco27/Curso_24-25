@@ -1,0 +1,14 @@
+#Vamos a hacer un ejercicio que genere al azar un numero entre 1 y 6
+import random #libreria de datos relacionado con los numeros aleatorios
+import time #libreria de datos relacionado con el tiempo del ordenador en milisegundos
+
+def dado():
+    semilla=time.time()
+    print("Semilla vale " +str(semilla))
+    random.seed(semilla)
+    respuesta=input("Quieres que tire el dado 100 veces(S/N) ")
+    for cont in range(1,101):
+        tirada=int(1+(random.random()*10)%6)
+        print("Ha salido " +str(tirada))
+
+dado()
