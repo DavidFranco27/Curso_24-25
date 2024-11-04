@@ -1,0 +1,34 @@
+#Un programa en el que el usuario tiene que adivinar el número pensado por el ordenador
+#y es aleatorio. Si el numero es mayor o menor el usuario lo sabra.
+import random #libreria de datos relacionado con los numeros aleatorios
+import time #libreria de datos relacionado con el tiempo del ordenador en milisegundos
+
+def duelo():
+    o=0
+    i=0
+    print("Vamos a lanzar tres dados cada uno y quien saque un numero total mayor gana.")
+    seguir=str(input("¿Estás preparado (S/N)? "))
+    semilla=time.time()
+    random.seed(semilla)
+    while(seguir=='S'):
+        print("Tus numeros son los siguientes")
+        for cont in range(1,4):
+            numero=int(random.random()*10)%6+1
+            print("Salio: " +str(numero))
+            o=numero+o
+        print("Tu suma vale: " +str(o))
+        print ("Mis numeros son los siguientes")
+        for cont in range(1,4):
+            numero=int(random.random()*10)%6+1
+            print("Salio: " +str(numero))
+            i=numero+i
+        print("Mi suma vale: " +str(i))
+        if(o>i):
+            print("Has ganado tú.")
+            seguir='N'
+        if(o<i):
+            print("He ganado yo.")
+            seguir='N'
+    print("Se acabó el juego")
+
+duelo()
