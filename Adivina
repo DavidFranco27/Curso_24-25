@@ -5,16 +5,16 @@ import time #libreria de datos relacionado con el tiempo del ordenador en milise
 
 def adivina():
     print("Voy a elegir al azar un número del 1 al 10 y tú tienes que adivinarlo.")
-    seguir=str(input("¿Estás preparado (S/N)?"))
+    seguir=str(input("¿Estás preparado (S/N)? "))
     semilla=time.time()
     random.seed(semilla)
     numero=str(int(random.random()*10)%10+1)
     while(seguir=='S'):
         respuesta=input("¿Qué número he pensado? (1-10) ")
         if(respuesta>numero):
-            print("Mayor")
+            print("Tu número es mayor")
         if(respuesta<numero):
-            print("Menor")
+            print("Tu número es menor")
         if(respuesta==numero):
             print("Has acertado")
             seguir='N'
