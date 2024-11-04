@@ -1,0 +1,23 @@
+#Un programa en el que el usuario tiene que adivinar el número pensado por el ordenador
+#y es aleatorio. Si el numero es mayor o menor el usuario lo sabra.
+import random #libreria de datos relacionado con los numeros aleatorios
+import time #libreria de datos relacionado con el tiempo del ordenador en milisegundos
+
+def adivina():
+    print("Voy a elegir al azar un número del 1 al 10 y tú tienes que adivinarlo.")
+    seguir=str(input("¿Estás preparado (S/N)?"))
+    semilla=time.time()
+    random.seed(semilla)
+    numero=str(int(random.random()*10)%10+1)
+    while(seguir=='S'):
+        respuesta=input("¿Qué número he pensado? (1-10) ")
+        if(respuesta>numero):
+            print("Mayor")
+        if(respuesta<numero):
+            print("Menor")
+        if(respuesta==numero):
+            print("Has acertado")
+            seguir='N'
+    print("Se acabó el juego")
+
+adivina()
