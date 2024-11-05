@@ -1,5 +1,3 @@
-#Un programa en el que el usuario tiene que adivinar el número pensado por el ordenador
-#y es aleatorio. Si el numero es mayor o menor el usuario lo sabra.
 import random #libreria de datos relacionado con los numeros aleatorios
 import time #libreria de datos relacionado con el tiempo del ordenador en milisegundos
 
