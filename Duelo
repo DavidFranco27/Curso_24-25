@@ -13,22 +13,26 @@ def duelo():
     while(seguir=='S'):
         print("Tus numeros son los siguientes")
         for cont in range(1,4):
+            a=input("El " +str(cont) +"º dado tuyo vale ")
             numero=int(random.random()*10)%6+1
             print("Salio: " +str(numero))
             o=numero+o
-        print("Tu suma vale: " +str(o))
-        print ("Mis numeros son los siguientes")
-        for cont in range(1,4):
             numero=int(random.random()*10)%6+1
+            a=input("El " +str(cont) +"º dado mio vale ")
             print("Salio: " +str(numero))
             i=numero+i
+        print("Tu suma vale: " +str(o))
         print("Mi suma vale: " +str(i))
+        w=input("Y el ganador es (sonidos de tambores) ")
         if(o>i):
             print("Has ganado tú.")
-            seguir='N'
+            seguir=input("¿Quieres volver a jugar (S/N)? ")
         if(o<i):
             print("He ganado yo.")
-            seguir='N'
+            seguir=input("¿Quieres volver a jugar (S/N)? ")
+        else:
+            print("Hemos empatado :( ")
+            seguir=input("¿Quieres volver a jugar (S/N)? ")
     print("Se acabó el juego")
 
 duelo()
