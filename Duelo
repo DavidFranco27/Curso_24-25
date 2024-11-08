@@ -1,34 +1,54 @@
+#El que llegue antes al 21 gana
 import random #libreria de datos relacionado con los numeros aleatorios
 import time #libreria de datos relacionado con el tiempo del ordenador en milisegundos
 
 def duelo():
-    print("Vamos a lanzar tres dados cada uno y quien saque un numero total mayor gana.")
+    print("Vamos a lanzar dados, el que se quede más cerca de 21 gana, si te pasas pierdes.")
     seguir=str(input("¿Estás preparado (S/N)? "))
     semilla=time.time()
     random.seed(semilla)
     while(seguir=='S'):
         o=0
         i=0
-        for cont in range(1,4):
-            a=input("El " +str(cont) +"º dado tuyo vale ")
-            numero=int(random.random()*10)%6+1
-            print("Salio: " +str(numero))
-            o=numero+o
-            numero=int(random.random()*10)%6+1
-            a=input("El " +str(cont) +"º dado mio vale ")
-            print("Salio: " +str(numero))
-            i=numero+i
-        w=input("Y el ganador es (sonidos de tambores) ")
-        print("Tu suma vale: " +str(o))
-        print("Mi suma vale: " +str(i))
-        if(o>i):
-            print("Has ganado tú.")
+        w=21
+        while(o<w and i<w):
+            a=input("¿Quieres tirar (S/N)? ")
+            if (a=='S'):
+                numero=int(random.random()*10)%6+1
+                q=input("El dado tuyo vale ")
+                print("Salio: " +str(numero))
+                o=numero+o
+                print("Tu suma vale: " +str(o))
+            else:
+                w=-10
+            b=input("¿Deberia tirar (S/N)? ")
+            if (b=='S'):
+                numero=int(random.random()*10)%6+1
+                q=input("El dado mio vale ")
+                print("Salio: " +str(numero))
+                i=numero+i
+                print("Mi suma vale: " +str(i))
+            else:
+                w=-10
+        desempateo=21-o
+        desempatei=21-i
+        if(21<o):
+            print("Te has pasado.")
             seguir=input("¿Quieres volver a jugar (S/N)? ")
-        if(o<i):
-            print("He ganado yo.")
+        if(21<i):
+            print("Me he pasado.")
             seguir=input("¿Quieres volver a jugar (S/N)? ")
-        if(o==i):
-            print("Hemos empatado :( ")
+        if(21==0):
+            print("Alcanzaste el 21 :(")
+            seguir=input("¿Quieres volver a jugar (S/N)? ")
+        if(21==i):
+            print("Alcanze el 21 :)")
+            seguir=input("¿Quieres volver a jugar (S/N)? ")
+        if(desempateo<desempatei):
+            print("Has ganado tú")
+            seguir=input("¿Quieres volver a jugar (S/N)? ")
+        if(desempatei<desempateo):
+            print("He ganado yo")
             seguir=input("¿Quieres volver a jugar (S/N)? ")
     print("Se acabó el juego")
 
