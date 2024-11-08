@@ -21,15 +21,15 @@ def duelo():
                 print("Tu suma vale: " +str(o))
             else:
                 w=-10
-            b=input("¿Deberia tirar (S/N)? ")
-            if (b=='S'):
+            if(i>18):
+                q=input("No voy a tirar que me paso")
+                w=-10
+            if(i<18):
                 numero=int(random.random()*10)%6+1
                 q=input("El dado mio vale ")
                 print("Salio: " +str(numero))
                 i=numero+i
                 print("Mi suma vale: " +str(i))
-            else:
-                w=-10
         l=input("Tenemos un resultado (Redoble de tambores)")
         desempateo=21-o
         desempatei=21-i
