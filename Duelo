@@ -30,13 +30,14 @@ def duelo():
                 print("Mi suma vale: " +str(i))
             else:
                 w=-10
+        l=input("Tenemos un resultado (Redoble de tambores)")
         desempateo=21-o
         desempatei=21-i
         if(21<o):
-            print("Te has pasado.")
+            print("Te has pasado, he ganado yo :)")
             seguir=input("¿Quieres volver a jugar (S/N)? ")
         if(21<i):
-            print("Me he pasado.")
+            print("Me he pasado, has ganado tu :(")
             seguir=input("¿Quieres volver a jugar (S/N)? ")
         if(21==0):
             print("Alcanzaste el 21 :(")
@@ -45,10 +46,13 @@ def duelo():
             print("Alcanze el 21 :)")
             seguir=input("¿Quieres volver a jugar (S/N)? ")
         if(desempateo<desempatei):
-            print("Has ganado tú")
+            print("Has ganado tú :(")
             seguir=input("¿Quieres volver a jugar (S/N)? ")
         if(desempatei<desempateo):
-            print("He ganado yo")
+            print("He ganado yo :)")
+            seguir=input("¿Quieres volver a jugar (S/N)? ")
+        if(o==i):
+            print("Hemos empatado :|")
             seguir=input("¿Quieres volver a jugar (S/N)? ")
     print("Se acabó el juego")
 
