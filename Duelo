@@ -45,6 +45,9 @@ def duelo():
         if(21==i):
             print("Alcanze el 21 :)")
             seguir=input("¿Quieres volver a jugar (S/N)? ")
+        if(o==i):
+            print("Hemos empatado :|")
+            seguir=input("¿Quieres volver a jugar (S/N)? ")
         else:
             if(desempateo<desempatei):
                 print("Has ganado tú :(")
@@ -52,9 +55,6 @@ def duelo():
             if(desempatei<desempateo):
                 print("He ganado yo :)")
                 seguir=input("¿Quieres volver a jugar (S/N)? ")
-        if(o==i):
-            print("Hemos empatado :|")
-            seguir=input("¿Quieres volver a jugar (S/N)? ")
     print("Se acabó el juego")
 
 duelo()
