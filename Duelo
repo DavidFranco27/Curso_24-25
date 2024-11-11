@@ -19,7 +19,7 @@ def duelo():
                 print("Salio: " +str(numero))
                 o=numero+o
                 print("Tu suma vale: " +str(o))
-            else:
+            if(a=='N'):
                 w=-10
             if(i>18):
                 q=input("No voy a tirar que me paso")
@@ -45,12 +45,13 @@ def duelo():
         if(21==i):
             print("Alcanze el 21 :)")
             seguir=input("¿Quieres volver a jugar (S/N)? ")
-        if(desempateo<desempatei):
-            print("Has ganado tú :(")
-            seguir=input("¿Quieres volver a jugar (S/N)? ")
-        if(desempatei<desempateo):
-            print("He ganado yo :)")
-            seguir=input("¿Quieres volver a jugar (S/N)? ")
+        else:
+            if(desempateo<desempatei):
+                print("Has ganado tú :(")
+                seguir=input("¿Quieres volver a jugar (S/N)? ")
+            if(desempatei<desempateo):
+                print("He ganado yo :)")
+                seguir=input("¿Quieres volver a jugar (S/N)? ")
         if(o==i):
             print("Hemos empatado :|")
             seguir=input("¿Quieres volver a jugar (S/N)? ")
