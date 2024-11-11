@@ -1,37 +1,32 @@
-#El que llegue antes al 21 gana
 import random #libreria de datos relacionado con los numeros aleatorios
 import time #libreria de datos relacionado con el tiempo del ordenador en milisegundos
 
 def duelo():
-    print("Vamos a lanzar tres dados cada uno y quien llegue antes al 21 gana.")
-    seguir=str(input("¿Estás preparado (S/N)? "))
+    n=0
+    m=0
     semilla=time.time()
+    print("Semilla vale " +str(semilla))
     random.seed(semilla)
-    while(seguir=='S'):
-        o=0
-        i=0
-        w=21
-        while(o<w and i<w):
-            a=input("¿Quieres seguir tirando (S/N)? ")
-            if (a==S)
-            numero=int(random.random()*10)%6+1
-            print("Salio: " +str(numero))
-            o=numero+o
-            print("Tu suma vale: " +str(o)) 
-            numero=int(random.random()*10)%6+1
-            a=input("El dado mio vale ")
-            print("Salio: " +str(numero))
-            i=numero+i
-            print("Mi suma vale: " +str(i))
-        if(w<o):
-            print("Has ganado tú.")
-            seguir=input("¿Quieres volver a jugar (S/N)? ")
-        if(w<i):
-            print("He ganado yo.")
-            seguir=input("¿Quieres volver a jugar (S/N)? ")
-        if(w<i and w<o):
-            print("Hemos empatado :( ")
-            seguir=input("¿Quieres volver a jugar (S/N)? ")
-    print("Se acabó el juego")
-
+    respuesta=input("Voy a desafiarte, quien saque una suma mayor en tres dados gana, ¿listo(S/N)? ")
+    while(respuesta==s)
+        for cont in range(1,4):
+            print("Tiro tu dado")
+            tirada1=int(1+(random.random()*10)%6)
+            print("Ha salido " +str(tirada1))
+            n=n+tirada1
+            print("Tiro mi dado")
+            tirada2=int(1+(random.random()*10)%6)
+            print("Ha salido " +str(tirada2))
+            m=m+tirada2
+    if(n<m):
+        print("He ganado")
+        respuesta=input("¿Quieres volver a jugar(S/N)? ")
+    if(n>m):
+        print("Me has ganado")
+        respuesta=input("¿Quieres volver a jugar(S/N)? ")
+    if(n==m):
+        print("Empatamos :(")
+        respuesta=input("¿Quieres volver a jugar(S/N)? ")
+    print("Pues nada")
+    
 duelo()
