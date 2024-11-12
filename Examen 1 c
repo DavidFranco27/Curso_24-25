@@ -1,0 +1,15 @@
+# Este programa sirve para decirnos el numero mayor y la suma de todos
+def programa_1():
+    max_num = input("Introduce un número: ")
+    sum_nums = max_num
+    n=0
+    while(n<8):
+        num= input("Introduce otro número: ")
+        sum_nums= sum_nums+num
+        n=n+1
+        if num > max_num:
+            max_num= num
+    print("The largest number is:" +str(max_num))
+    print("The average is: " +str(sum_nums))
+
+programa_1()
