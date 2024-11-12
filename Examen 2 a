@@ -1,0 +1,10 @@
+# Este programa sirve para hacer codigo binario de una palabra con mayusculas
+def curvi(letra_mayuscula):
+    respuesta=raw_input("Dime una palabra y ponle mayusculas ")
+    for letra in palabra:
+        if(letra==):
+            print("0")
+        else:
+            print("1")
+
+curvi(letra_mayuscula)
