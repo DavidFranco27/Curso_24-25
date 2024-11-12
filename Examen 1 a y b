@@ -1,4 +1,4 @@
-# Este programa sirve para ...
+# Este programa sirve para decirnos el numero mayor y la suma de todos
 def programa_1():
     max_num = input("Introduce un número: ")
     sum_nums = max_num
