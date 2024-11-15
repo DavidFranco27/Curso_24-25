@@ -1,0 +1,5 @@
+def piramide(altura):
+    for i in range(1, altura + 1):
+        print(" " * (altura) + "*" * (altura))
+
+piramide(altura)
