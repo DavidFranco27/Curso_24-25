@@ -1,0 +1,13 @@
+#Este programa sirve para hacer codigo binario de una palabra con mayusculas y sea curva
+def curvi():
+    n=0
+    palabra=raw_input("Dime una palabra con mayuscyulas curvas y hare un codigo binario ")
+    for letra in palabra:
+        if(letra=='B' or letra=='C' or letra=='D' or letra=='G' or letra=='J' or letra=='Ñ' or letra=='O' or letra=='P' or letra=='Q' or letra=='R' or letra=='U' or letra=='Y'):
+            print("*")
+            n=n+1
+        else:
+            print("1")
+    print("Hay un total de " +str(n) +" palabras curvi.")
+
+curvi()
