@@ -1,0 +1,7 @@
+def factorial():
+    n=input("Dime un número para que calcule su factorial ")
+    for cont in range(1,n+1):
+        n=n*cont
+    print("Su factorial es " +str(n))
+    
+factorial()
