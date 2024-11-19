@@ -1,0 +1,15 @@
+def factorial():
+    m=0
+    n=input("Dime un número para que calcule su factorial ")
+    x=n
+    c=0
+    if(n>0):
+        while(m<x):
+            c=c+1        
+            n=n*c
+            m=m+1
+        print("Su factorial es " +str(n))
+    if(n<0):
+        print("No me es posible hacerlo con números negativos")
+        
+factorial()
