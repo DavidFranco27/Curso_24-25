@@ -1,0 +1,18 @@
+def abundante():
+    a=w=0
+    n=input("Dime un número y te dire si es abundante o no ")
+    for cont in range(1,n):
+        a=0
+        m=0
+        m=n/float(cont)
+        if(m==int(m)):
+            a=cont
+            w=w+a
+        else:
+            a=0
+    if(n<w):
+        print("Es un número abundante")
+    if(n>w or n==w):
+        print("No es un número abundante")
+
+abundante()
