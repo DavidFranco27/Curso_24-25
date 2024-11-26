@@ -1,0 +1,29 @@
+# Este programa sirve para cambiar las minusculas por mayusculas y al reves
+def programa():
+    seguir=True
+    while(seguir==True):
+        suma=0
+        palabra=raw_input("Dime una palabra: ")
+        inversa=""
+        for cont in range(len(palabra)-1, -1, -1):
+            inversa += palabra[cont]
+            entrada="abcdefghijklmnñopqrstuvwxyz"
+            salida="AbcdEfghIjklmnñOpqrstUvwxyz"
+            cambio=str.maketrans(entrada,salida)
+            suma=suma+cont
+        print("Palabra invertida: ",inversa.translate(cambio))
+        print("La palabra tiene " +suma +"letras")
+        s=input("¿Quieres seguir(S/N)? ")
+        if(s=="S"):
+            seguir=True
+            print("Volvamos a hacerlo")
+        if(s=="N"):
+            seguir=False
+            print("Adios")
+
+programa()
+#Dime una palabra: hOLa
+#Palabra invertida: HolA
+#La palabra tiene 4 letras
+#¿Quieres seguir(S/N)? N
+#Adios
