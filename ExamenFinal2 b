@@ -1,0 +1,16 @@
+def MCM():
+    a=0
+    q=0
+    l= int(input("Dime un numero "))
+    m= int(input("Dime otro numero "))
+    n= int(input("Dime otro numero mas "))
+    result = l * m * n
+    mcm=result
+    while(q==1):
+        a=a+1
+        if (a%l == 0 and a%m == 0 and a%n == 0):
+            mcm= cont
+            q=0
+    print("el MCM de los tres numeros es: "+ str(mcm))
+
+MCM()
