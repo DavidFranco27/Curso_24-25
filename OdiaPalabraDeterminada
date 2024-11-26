@@ -1,0 +1,8 @@
+#Cada vez que aparezca un nombre en concreto y que ponga asteriscos
+def texto():
+    nombre=raw_input("Dime un nombre que me vayas a decir: ")
+    frase=raw_input("Dime una frase con ese nombre: ")
+    nuevafrase=frase.replace(nombre, "*")
+    print(nuevafrase)
+
+texto()
